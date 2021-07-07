@@ -13,3 +13,76 @@
  *= require_tree .
  *= require_self
  */
+
+/** {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+body {
+  margin: 33px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+div {
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+th {
+  padding-bottom: 5px
+}
+
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  font-size: 12px;
+  margin: 33px;
+}
+
+.field, .action {
+  margin-bottom: 10px
+}
+
+.notifications {
+  color: white;
+}
+
+.notice {
+  color: green;
+}
+
+.error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+}
+
+.error_explanation h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: crimson;
+  margin: -7px;
+  margin-bottom: 0;
+  padding: 5px;
+  padding-left: 15px;
+
+}
