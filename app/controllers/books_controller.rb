@@ -24,7 +24,7 @@ class BooksController < ApplicationController
     else
       render :index
     end
-    
+
   end
 
   def edit
@@ -40,7 +40,7 @@ class BooksController < ApplicationController
     else
       render :edit
     end
-    
+
   end
 
   def destroy

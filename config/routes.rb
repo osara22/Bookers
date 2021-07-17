@@ -7,11 +7,13 @@ Rails.application.routes.draw do
 
   # ルートへのルーティング設定
   root :to => 'homes#index'
-  post 'books' => 'books#create'
-  get 'books' => 'books#index'
-  get 'books/:id' => 'books#show', as:'book'
-  get 'books/:id/edit' => 'books#edit', as: 'edit_book'
-  patch 'books/:id' => 'books#update', as: 'update_book'
+
+  resources :books, only: [:new, :create, :index, :show, :edit, :update, :destroy]
+  # post 'books' => 'books#create'
+  # get 'books' => 'books#index'
+  # get 'books/:id' => 'books#show', as: 'book'
+  # get 'books/:id/edit' => 'books#edit', as: 'edit_book'
+  # patch 'books/:id' => 'books#update', as: 'update_book'
   delete 'books/:id' => 'books#destroy', as: 'destroy_book'
 
 end
